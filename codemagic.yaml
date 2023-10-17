@@ -36,7 +36,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - yevgenyly.s.en.ko@outlook.com
+          - lilyc.ol.lin.s@outlook.com
         notify:
           success: true
           failure: false
