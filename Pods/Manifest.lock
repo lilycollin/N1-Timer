@@ -1,0 +1,41 @@
+PODS:
+  - AppsFlyerFramework (6.12.2):
+    - AppsFlyerFramework/Main (= 6.12.2)
+  - AppsFlyerFramework/Main (6.12.2)
+  - FBSDKCoreKit (8.0.0):
+    - FBSDKCoreKit/Basics (= 8.0.0)
+    - FBSDKCoreKit/Core (= 8.0.0)
+  - FBSDKCoreKit/Basics (8.0.0)
+  - FBSDKCoreKit/Core (8.0.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (8.0.0):
+    - FBSDKLoginKit/Login (= 8.0.0)
+  - FBSDKLoginKit/Login (8.0.0):
+    - FBSDKCoreKit (~> 8.0.0)
+  - FBSDKShareKit (8.0.0):
+    - FBSDKShareKit/Share (= 8.0.0)
+  - FBSDKShareKit/Share (8.0.0):
+    - FBSDKCoreKit (~> 8.0.0)
+
+DEPENDENCIES:
+  - AppsFlyerFramework
+  - FBSDKCoreKit (~> 8.0.0)
+  - FBSDKLoginKit (~> 8.0.0)
+  - FBSDKShareKit (~> 8.0.0)
+
+SPEC REPOS:
+  trunk:
+    - AppsFlyerFramework
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+
+SPEC CHECKSUMS:
+  AppsFlyerFramework: 6eb4d89d2eb9a6632317f1055b359d9fd85fd5ff
+  FBSDKCoreKit: 9d27fe97a2fa2abe5eeefea8240e837623ab88e0
+  FBSDKLoginKit: 2cbaf5405379731b22f2ebc224f7c30f62378171
+  FBSDKShareKit: bf3705fc42b660c3da9f15223db791b3c9c2acde
+
+PODFILE CHECKSUM: ab22c497b2ac832989cdd4c030fc0c1409fb1af3
+
+COCOAPODS: 1.13.0
