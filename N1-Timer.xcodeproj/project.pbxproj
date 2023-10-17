@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		040CB4022ADE934F0007EC03 /* N1-Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "N1-Timer.entitlements"; sourceTree = "<group>"; };
+		040CB4032ADE97E00007EC03 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		045044532ADE82150032435F /* N1-Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N1-Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045044562ADE82150032435F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045044612ADE82150032435F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		0450444A2ADE82150032435F = {
 			isa = PBXGroup;
 			children = (
+				040CB4032ADE97E00007EC03 /* codemagic.yaml */,
 				045044552ADE82150032435F /* N1-Timer */,
 				045044542ADE82150032435F /* Products */,
 				4EEC6A6E315262B6F5130176 /* Pods */,

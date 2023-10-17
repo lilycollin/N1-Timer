@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     //DEVELOPER MODE
     let appsFlyerDevKey = "iRXcZxgE5u2FPVN8GqqWKc"
-    let appleAppId = "6468955846"
+    let appleAppId = "6469603910"
     
     var window: UIWindow?
     
