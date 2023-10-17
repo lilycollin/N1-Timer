@@ -304,7 +304,7 @@ class TimerVC: UIViewController {
         self.duration = TimeInterval(self.breakTime)
         self.circularView.resetProgress()
         self.circularView.progressAnimation(duration: self.duration)
-        self.circularView.progressLayer.strokeColor = UIColor(.white).cgColor
+        self.circularView.progressLayer.strokeColor = UIColor(ciColor: .white).cgColor
         self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.stepBreak), userInfo: nil, repeats: true)
         print("Break run")
     }
@@ -327,7 +327,7 @@ class TimerVC: UIViewController {
         updateStatusLabel()
         duration = TimeInterval(5)
         circularView.resetProgress()
-        circularView.progressLayer.strokeColor = UIColor(.yellow).cgColor
+        circularView.progressLayer.strokeColor = UIColor(ciColor: .yellow).cgColor
         circularView.progressAnimation(duration: duration)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
             self.playSound()

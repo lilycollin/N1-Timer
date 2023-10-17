@@ -25,7 +25,7 @@ class HintView: UIView {
         let label = UILabel()
         let text = "Move your hand near the screen to turn pause on/off"
         var attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(.white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 12) ?? .systemFont(ofSize: 12)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 12) ?? .systemFont(ofSize: 12)], range: NSRange(location: 0, length: text.count))
         label.attributedText = attributedText
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -36,7 +36,7 @@ class HintView: UIView {
         
         let closeButton = UIButton(type: .custom)
         attributedText = NSMutableAttributedString(string: "OKAY")
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(.white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 16) ?? .systemFont(ofSize: 12)], range: NSRange(location: 0, length: "OKAY".count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 16) ?? .systemFont(ofSize: 12)], range: NSRange(location: 0, length: "OKAY".count))
         closeButton.setAttributedTitle(attributedText, for: .normal)
         closeButton.setTitleColor(.white, for: .normal)
         closeButton.clipsToBounds = true
