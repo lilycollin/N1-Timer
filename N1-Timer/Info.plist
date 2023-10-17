@@ -25,7 +25,7 @@
         <dict>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>fb699918948711931</string>
+                <string>fb1497452694132124</string>
                 <string>N1-Timer</string>
             </array>
         </dict>
@@ -35,9 +35,9 @@
     <key>FacebookAdvertiserIDCollectionEnabled</key>
     <true/>
     <key>FacebookAppID</key>
-    <string>699918948711931</string>
+    <string>1497452694132124</string>
     <key>FacebookClientToken</key>
-    <string>16b956ec4786dbca3a417019c0b08581</string>
+    <string>ca653fc8ee3b0f0d5b379059dcfefeff</string>
     <key>FacebookDisplayName</key>
     <string>N1-Timer</string>
     <key>LSApplicationQueriesSchemes</key>
