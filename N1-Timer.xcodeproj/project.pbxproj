@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04201E562ADEC93C00E62EF7 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04201E552ADEC93C00E62EF7 /* start.mp3 */; };
-		04201E582ADEC97000E62EF7 /* getReady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04201E572ADEC97000E62EF7 /* getReady.wav */; };
-		04201E5A2ADEC99300E62EF7 /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04201E592ADEC99300E62EF7 /* end.mp3 */; };
+		04201E612ADECED100E62EF7 /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04201E5E2ADECED100E62EF7 /* end.mp3 */; };
+		04201E622ADECED100E62EF7 /* getReady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04201E5F2ADECED100E62EF7 /* getReady.wav */; };
+		04201E632ADECED100E62EF7 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04201E602ADECED100E62EF7 /* start.mp3 */; };
 		045044572ADE82150032435F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045044562ADE82150032435F /* AppDelegate.swift */; };
 		045044622ADE82150032435F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045044602ADE82150032435F /* Main.storyboard */; };
 		045044642ADE82160032435F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045044632ADE82160032435F /* Assets.xcassets */; };
@@ -28,9 +28,9 @@
 /* Begin PBXFileReference section */
 		040CB4022ADE934F0007EC03 /* N1-Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "N1-Timer.entitlements"; sourceTree = "<group>"; };
 		040CB4032ADE97E00007EC03 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
-		04201E552ADEC93C00E62EF7 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = start.mp3; path = ../../../../Users/mac/Downloads/start.mp3; sourceTree = "<group>"; };
-		04201E572ADEC97000E62EF7 /* getReady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = getReady.wav; path = ../../../../Users/mac/Downloads/getReady.wav; sourceTree = "<group>"; };
-		04201E592ADEC99300E62EF7 /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = end.mp3; path = ../../../../Users/mac/.Trash/end.mp3; sourceTree = "<group>"; };
+		04201E5E2ADECED100E62EF7 /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = end.mp3; sourceTree = "<group>"; };
+		04201E5F2ADECED100E62EF7 /* getReady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = getReady.wav; sourceTree = "<group>"; };
+		04201E602ADECED100E62EF7 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
 		045044532ADE82150032435F /* N1-Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N1-Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045044562ADE82150032435F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045044612ADE82150032435F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,10 +84,10 @@
 		045044552ADE82150032435F /* N1-Timer */ = {
 			isa = PBXGroup;
 			children = (
+				04201E5E2ADECED100E62EF7 /* end.mp3 */,
+				04201E5F2ADECED100E62EF7 /* getReady.wav */,
+				04201E602ADECED100E62EF7 /* start.mp3 */,
 				040CB4022ADE934F0007EC03 /* N1-Timer.entitlements */,
-				04201E572ADEC97000E62EF7 /* getReady.wav */,
-				04201E592ADEC99300E62EF7 /* end.mp3 */,
-				04201E552ADEC93C00E62EF7 /* start.mp3 */,
 				045044712ADE82E90032435F /* Info.plist */,
 				045044562ADE82150032435F /* AppDelegate.swift */,
 				045044602ADE82150032435F /* Main.storyboard */,
@@ -182,12 +182,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04201E5A2ADEC99300E62EF7 /* end.mp3 in Resources */,
+				04201E612ADECED100E62EF7 /* end.mp3 in Resources */,
+				04201E632ADECED100E62EF7 /* start.mp3 in Resources */,
 				045044622ADE82150032435F /* Main.storyboard in Resources */,
-				04201E562ADEC93C00E62EF7 /* start.mp3 in Resources */,
+				04201E622ADECED100E62EF7 /* getReady.wav in Resources */,
 				045044642ADE82160032435F /* Assets.xcassets in Resources */,
 				045044672ADE82160032435F /* LaunchScreen.storyboard in Resources */,
-				04201E582ADEC97000E62EF7 /* getReady.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
