@@ -161,7 +161,7 @@ class TimerVC: UIViewController {
         roundLabel.translatesAutoresizingMaskIntoConstraints = false
         let text = "Round : \(currentRound ?? 1)"
         let attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 25) ?? .systemFont(ofSize: 25)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 25) ?? .systemFont(ofSize: 25)], range: NSRange(location: 0, length: text.count))
         roundLabel.attributedText = attributedText
         view.addSubview(roundLabel)
         NSLayoutConstraint.activate([
@@ -198,8 +198,8 @@ class TimerVC: UIViewController {
         titleView.addSubview(titleLabel)
         let text = "N1TIMER"
         let attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? .red, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 0, length: 2))
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 2, length: text.count-2))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? UIColor(ciColor: .red), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 0, length: 2))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 2, length: text.count-2))
         titleLabel.attributedText = attributedText
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -232,10 +232,10 @@ class TimerVC: UIViewController {
         startButton.isUserInteractionEnabled = true
         let text = "Back"
         var attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 15) ?? .systemFont(ofSize: 15)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 15) ?? .systemFont(ofSize: 15)], range: NSRange(location: 0, length: text.count))
         startButton.setAttributedTitle(attributedText, for: .normal)
         attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? .red, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 15) ?? .systemFont(ofSize: 15)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? UIColor(ciColor: .red), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 15) ?? .systemFont(ofSize: 15)], range: NSRange(location: 0, length: text.count))
         startButton.setAttributedTitle(attributedText, for: .highlighted)
         startButton.translatesAutoresizingMaskIntoConstraints = false
         startView.addSubview(startButton)
@@ -343,7 +343,7 @@ class TimerVC: UIViewController {
     func updateRoundLabel() {
         let text = "Round : \(currentRound ?? 1)"
         let attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 25) ?? .systemFont(ofSize: 25)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 25) ?? .systemFont(ofSize: 25)], range: NSRange(location: 0, length: text.count))
         roundLabel.attributedText = attributedText
     }
     
@@ -368,7 +368,7 @@ class TimerVC: UIViewController {
     
     func updateStatusLabel() {
         let attributedText = NSMutableAttributedString(string: timerState.rawValue)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: timerState.rawValue.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: timerState.rawValue.count))
         stateLabel.attributedText = attributedText
     }
 }

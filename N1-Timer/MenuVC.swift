@@ -64,8 +64,8 @@ class MenuVC: UIViewController {
         titleView.addSubview(titleLabel)
         let text = "N1TIMER"
         let attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? .red, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 0, length: 2))
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 2, length: text.count-2))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? UIColor(ciColor: .red), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 0, length: 2))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 2, length: text.count-2))
         titleLabel.attributedText = attributedText
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -88,7 +88,7 @@ class MenuVC: UIViewController {
         roundsLabel = UILabel()
         var text = "Rounds: \(rounds)"
         var attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(.white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
         roundsLabel.attributedText = attributedText
         roundsLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(roundsLabel)
@@ -131,7 +131,7 @@ class MenuVC: UIViewController {
         roundsTimeLabel.numberOfLines = 0
         text = "Time per Round: \(timeToString(timePerRound))"
         attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(.white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
         roundsTimeLabel.attributedText = attributedText
         roundsTimeLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(roundsTimeLabel)
@@ -172,7 +172,7 @@ class MenuVC: UIViewController {
         timePerRound = Int(timeStepper.value)
         let text = "Time per Round: \(timeToString(timePerRound))"
         let attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(.white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
         roundsTimeLabel.attributedText = attributedText
     }
     
@@ -181,7 +181,7 @@ class MenuVC: UIViewController {
                 rounds = selectedView.tag + 1
                 let text = "Rounds: \(rounds)"
                 let attributedText = NSMutableAttributedString(string: text)
-                attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(.white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
+                attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
                 UIView.animate(withDuration: 0.3) {
                     self.roundsLabel.attributedText = attributedText
                     for i in self.squareViews {
@@ -222,7 +222,7 @@ class MenuVC: UIViewController {
         breakSwitchView.addSubview(breakTitle)
         var text = "Break"
         var attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 0, length: text.count))
         breakTitle.attributedText = attributedText
         breakTitle.translatesAutoresizingMaskIntoConstraints = false
         
@@ -252,7 +252,7 @@ class MenuVC: UIViewController {
         breakTimeLabel.numberOfLines = 0
         text = "Break time: \(timeToString(timeBreak))"
         attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(.white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
         breakTimeLabel.attributedText = attributedText
         breakTimeLabel.translatesAutoresizingMaskIntoConstraints = false
         breakView.addSubview(breakTimeLabel)
@@ -294,7 +294,7 @@ class MenuVC: UIViewController {
         timeBreak = Int(breakTimeStepper.value)
         let text = "Break time: \(timeToString(timeBreak))"
         let attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(.white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 20) ?? .systemFont(ofSize: 20)], range: NSRange(location: 0, length: text.count))
         breakTimeLabel.attributedText = attributedText
     }
     
@@ -335,10 +335,10 @@ class MenuVC: UIViewController {
         startButton.isUserInteractionEnabled = true
         let text = "Start"
         var attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 15) ?? .systemFont(ofSize: 15)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 15) ?? .systemFont(ofSize: 15)], range: NSRange(location: 0, length: text.count))
         startButton.setAttributedTitle(attributedText, for: .normal)
         attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? .red, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 15) ?? .systemFont(ofSize: 15)], range: NSRange(location: 0, length: text.count))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? UIColor(ciColor: .red), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 15) ?? .systemFont(ofSize: 15)], range: NSRange(location: 0, length: text.count))
         startButton.setAttributedTitle(attributedText, for: .highlighted)
         startButton.translatesAutoresizingMaskIntoConstraints = false
         startView.addSubview(startButton)

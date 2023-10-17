@@ -20,8 +20,8 @@ class LoadingViewController: UIViewController, URLSessionDelegate {
         view.addSubview(titleLabel)
         let text = "N1TIMER"
         let attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? .red, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 0, length: 2))
-        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 2, length: text.count-2))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "Red_") ?? UIColor(ciColor: .red), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 0, length: 2))
+        attributedText.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(ciColor: .white), NSAttributedString.Key.font : UIFont(name: "AvenirNext-Heavy", size: 30) ?? .systemFont(ofSize: 30)], range: NSRange(location: 2, length: text.count-2))
         titleLabel.attributedText = attributedText
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
