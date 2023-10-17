@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04201E562ADEC93C00E62EF7 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04201E552ADEC93C00E62EF7 /* start.mp3 */; };
+		04201E582ADEC97000E62EF7 /* getReady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04201E572ADEC97000E62EF7 /* getReady.wav */; };
+		04201E5A2ADEC99300E62EF7 /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04201E592ADEC99300E62EF7 /* end.mp3 */; };
 		045044572ADE82150032435F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045044562ADE82150032435F /* AppDelegate.swift */; };
 		045044622ADE82150032435F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045044602ADE82150032435F /* Main.storyboard */; };
 		045044642ADE82160032435F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045044632ADE82160032435F /* Assets.xcassets */; };
@@ -17,9 +20,6 @@
 		045044752ADE83380032435F /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045044742ADE83380032435F /* TimerManager.swift */; };
 		045044772ADE834B0032435F /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045044762ADE834B0032435F /* Vibration.swift */; };
 		045044792ADE83570032435F /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045044782ADE83570032435F /* HintView.swift */; };
-		0450447D2ADE839B0032435F /* getReady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0450447A2ADE839B0032435F /* getReady.wav */; };
-		0450447E2ADE839B0032435F /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0450447B2ADE839B0032435F /* end.mp3 */; };
-		0450447F2ADE839B0032435F /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0450447C2ADE839B0032435F /* start.mp3 */; };
 		045044812ADE84580032435F /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045044802ADE84580032435F /* LoadingVC.swift */; };
 		045044832ADE84720032435F /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045044822ADE84720032435F /* WebVC.swift */; };
 		B13C654BBFBFD662D57CF2CB /* Pods_N1_Timer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3ED37FAF3C21A9922779EB /* Pods_N1_Timer.framework */; };
@@ -28,6 +28,9 @@
 /* Begin PBXFileReference section */
 		040CB4022ADE934F0007EC03 /* N1-Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "N1-Timer.entitlements"; sourceTree = "<group>"; };
 		040CB4032ADE97E00007EC03 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
+		04201E552ADEC93C00E62EF7 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = start.mp3; path = ../../../../Users/mac/Downloads/start.mp3; sourceTree = "<group>"; };
+		04201E572ADEC97000E62EF7 /* getReady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = getReady.wav; path = ../../../../Users/mac/Downloads/getReady.wav; sourceTree = "<group>"; };
+		04201E592ADEC99300E62EF7 /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = end.mp3; path = ../../../../Users/mac/.Trash/end.mp3; sourceTree = "<group>"; };
 		045044532ADE82150032435F /* N1-Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N1-Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045044562ADE82150032435F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045044612ADE82150032435F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,9 +43,6 @@
 		045044742ADE83380032435F /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		045044762ADE834B0032435F /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
 		045044782ADE83570032435F /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
-		0450447A2ADE839B0032435F /* getReady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = getReady.wav; path = ../../../../Users/mac/Downloads/getReady.wav; sourceTree = "<group>"; };
-		0450447B2ADE839B0032435F /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = end.mp3; path = ../../../../Users/mac/Downloads/end.mp3; sourceTree = "<group>"; };
-		0450447C2ADE839B0032435F /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = start.mp3; path = ../../../../Users/mac/Downloads/start.mp3; sourceTree = "<group>"; };
 		045044802ADE84580032435F /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		045044822ADE84720032435F /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		1A8CDFF8160C1A05706BBD57 /* Pods-N1-Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-N1-Timer.release.xcconfig"; path = "Target Support Files/Pods-N1-Timer/Pods-N1-Timer.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,9 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				040CB4022ADE934F0007EC03 /* N1-Timer.entitlements */,
-				0450447B2ADE839B0032435F /* end.mp3 */,
-				0450447A2ADE839B0032435F /* getReady.wav */,
-				0450447C2ADE839B0032435F /* start.mp3 */,
+				04201E572ADEC97000E62EF7 /* getReady.wav */,
+				04201E592ADEC99300E62EF7 /* end.mp3 */,
+				04201E552ADEC93C00E62EF7 /* start.mp3 */,
 				045044712ADE82E90032435F /* Info.plist */,
 				045044562ADE82150032435F /* AppDelegate.swift */,
 				045044602ADE82150032435F /* Main.storyboard */,
@@ -182,12 +182,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04201E5A2ADEC99300E62EF7 /* end.mp3 in Resources */,
 				045044622ADE82150032435F /* Main.storyboard in Resources */,
-				0450447F2ADE839B0032435F /* start.mp3 in Resources */,
-				0450447D2ADE839B0032435F /* getReady.wav in Resources */,
-				0450447E2ADE839B0032435F /* end.mp3 in Resources */,
+				04201E562ADEC93C00E62EF7 /* start.mp3 in Resources */,
 				045044642ADE82160032435F /* Assets.xcassets in Resources */,
 				045044672ADE82160032435F /* LaunchScreen.storyboard in Resources */,
+				04201E582ADEC97000E62EF7 /* getReady.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
